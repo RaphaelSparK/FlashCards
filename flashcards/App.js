@@ -2,15 +2,25 @@ import React from 'react'
 // import { StyleSheet } from 'react-native'
 import { createStackNavigator } from 'react-navigation'
 import Decks from './Components/Decks'
-
+import NewDeck from './Components/NewDeck'
 const Stack = createStackNavigator({
   Decks: {
     screen: Decks,
     navigationOptions: {
-      title: 'Baralhos',
+      title: 'Decks',
       headerTintColor: 'white',
       headerStyle: {
-        backgroundColor: '#66bb66'
+        backgroundColor: '#220735'
+      }
+    }
+  },
+  NewDeck: {
+    screen: NewDeck,
+    navigationOptions: {
+      title: 'New Deck',
+      headerTintColor: 'white',
+      headerStyle: {
+        backgroundColor: '#381A4E'
       }
     }
   }
