@@ -8,6 +8,8 @@ import Deck from './components/Deck'
 import NewCard from './components/NewCard'
 import PlayDeck from './components/PlayDeck'
 
+import { barColor } from './utils/colors'
+
 const Stack = createStackNavigator({
   Decks: {
     screen: Decks,
@@ -15,7 +17,7 @@ const Stack = createStackNavigator({
       title: 'Decks',
       headerTintColor: 'white',
       headerStyle: {
-        backgroundColor: '#220735'
+        backgroundColor: barColor
       }
     }
   },
@@ -25,7 +27,7 @@ const Stack = createStackNavigator({
       title: 'New Deck',
       headerTintColor: 'white',
       headerStyle: {
-        backgroundColor: '#381A4E'
+        backgroundColor: barColor
       }
     }
   },
@@ -34,7 +36,7 @@ const Stack = createStackNavigator({
     navigationOptions: {
       headerTintColor: 'white',
       headerStyle: {
-        backgroundColor: '#66bbbb'
+        backgroundColor: barColor
       }
     }
   },
@@ -43,7 +45,7 @@ const Stack = createStackNavigator({
     navigationOptions: {
       headerTintColor: 'white',
       headerStyle: {
-        backgroundColor: '#66bbbb'
+        backgroundColor: barColor
       }
     }
   },
@@ -52,7 +54,7 @@ const Stack = createStackNavigator({
     navigationOptions: {
       headerTintColor: 'white',
       headerStyle: {
-        backgroundColor: '#66bbbb'
+        backgroundColor: barColor
       }
     }
   }

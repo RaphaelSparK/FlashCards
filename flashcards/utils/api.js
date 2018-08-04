@@ -1,4 +1,6 @@
-import { AsyncStorage } from 'react-native'
+import {
+  AsyncStorage
+} from 'react-native'
 const STORAGE = 'FLASHCARDS'
 
 export const getDecks = () =>
@@ -14,7 +16,12 @@ export const getDeck = id =>
 export const saveDeckTitle = title => {
   return getDecks()
     .then(decks => {
-      const newDecks = { ...decks, [title]: { title, questions: [] } }
+      const newDecks = { ...decks,
+        [title]: {
+          title,
+          questions: []
+        }
+      }
       return AsyncStorage.setItem(STORAGE, JSON.stringify(newDecks))
     })
     .catch(ex => console.error(ex))
