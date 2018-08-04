@@ -2,11 +2,11 @@ import React from 'react'
 // import { StyleSheet } from 'react-native'
 import { createStackNavigator } from 'react-navigation'
 
-import Decks from './components/Decks'
-import NewDeck from './components/NewDeck'
-import Deck from './components/Deck'
-import NewCard from './components/NewCard'
-import PlayDeck from './components/PlayDeck'
+import Decks from './Components/Decks'
+import NewDeck from './Components/NewDeck'
+import Deck from './Components/Deck'
+import NewCard from './Components/NewCard'
+import PlayDeck from './Components/PlayDeck'
 
 import { barColor } from './utils/colors'
 
